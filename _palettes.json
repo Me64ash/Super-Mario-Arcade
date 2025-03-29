@@ -1,0 +1,51 @@
+{
+    "nextPaletteID": 6,
+    "palettes": {
+        "custom2": {
+            "id": "custom2",
+            "name": "Mario arcade (Yellow Unused)",
+            "colors": [
+                "#000000",
+                "#FFFFFF",
+                "#D10000",
+                "#F4EF6C",
+                "#D0823E",
+                "#F5D400",
+                "#199C02",
+                "#5EE000",
+                "#0D13C9",
+                "#6D96E9",
+                "#5F20AC",
+                "#817BA3",
+                "#351F6F",
+                "#F0D0B0",
+                "#7A2D00",
+                "#000000"
+            ],
+            "custom": true
+        },
+        "custom3": {
+            "id": "custom3",
+            "name": "Mario arcade",
+            "colors": [
+                "#000000",
+                "#FFFFFF",
+                "#D10000",
+                "#FF93C4",
+                "#D0823E",
+                "#F5D400",
+                "#199C02",
+                "#5EE000",
+                "#0D13C9",
+                "#60B0E2",
+                "#5F20AC",
+                "#817BA3",
+                "#351F6F",
+                "#F0D0B0",
+                "#7A2D00",
+                "#000000"
+            ],
+            "custom": true
+        }
+    }
+}
