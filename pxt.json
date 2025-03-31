@@ -1,5 +1,6 @@
 {
     "name": "SUPER MARIO ARCADE (MAIN FILE/DEV) - Copy",
+    "version": "0.1.0",
     "description": "",
     "dependencies": {
         "device": "*",
