@@ -820,27 +820,9 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
                     Start()
                 })
             } else if (controller.left.isPressed()) {
-                music.stopAllSounds()
-                Start2 = false
-                TitleSP.setImage(assets.image`Title Main L`)
-                color.FadeToWhite.startScreenEffect(500)
-                music.setVolume(150)
-                music.play(music.melodyPlayable(music.magicWand), music.PlaybackMode.InBackground)
-                timer.after(600, function () {
-                    color.clearFadeEffect()
-                    Start_Luigi()
-                })
+            	
             } else if (controller.down.isPressed()) {
-                music.stopAllSounds()
-                Start2 = false
-                TitleSP.setImage(assets.image`Title Main M`)
-                color.FadeToWhite.startScreenEffect(500)
-                music.setVolume(150)
-                music.play(music.melodyPlayable(music.smallCrash), music.PlaybackMode.InBackground)
-                timer.after(600, function () {
-                    color.clearFadeEffect()
-                    Start_Metal()
-                })
+            	
             }
         }
     }
@@ -1143,32 +1125,32 @@ function Start_Luigi () {
     Screencode()
     WJA = true
     UI()
-    for (let value of tiles.getTilesByType(myTiles.tile35)) {
+    for (let value of tiles.getTilesByType(myTiles.transparency16)) {
         ToadST = sprites.create(assets.image`Toad`, SpriteKind.NPC)
         tiles.placeOnTile(ToadST, value)
         tiles.setTileAt(value, myTiles.transparency16)
     }
-    for (let value of tiles.getTilesByType(myTiles.tile30)) {
+    for (let value of tiles.getTilesByType(myTiles.transparency16)) {
         ToadRed = sprites.create(assets.image`Toad red`, SpriteKind.NPC)
         tiles.placeOnTile(ToadRed, value)
         tiles.setTileAt(value, myTiles.transparency16)
     }
-    for (let value of tiles.getTilesByType(myTiles.tile32)) {
+    for (let value of tiles.getTilesByType(myTiles.transparency16)) {
         ToadBlue = sprites.create(assets.image`Toad blue`, SpriteKind.NPC)
         tiles.placeOnTile(ToadBlue, value)
         tiles.setTileAt(value, myTiles.transparency16)
     }
-    for (let value of tiles.getTilesByType(myTiles.tile33)) {
+    for (let value of tiles.getTilesByType(myTiles.transparency16)) {
         ToadGreen = sprites.create(assets.image`Toad green`, SpriteKind.NPC)
         tiles.placeOnTile(ToadGreen, value)
         tiles.setTileAt(value, myTiles.transparency16)
     }
-    for (let value of tiles.getTilesByType(myTiles.tile34)) {
+    for (let value of tiles.getTilesByType(myTiles.transparency16)) {
         ToadYellow = sprites.create(assets.image`Toad yellow`, SpriteKind.NPC)
         tiles.placeOnTile(ToadYellow, value)
         tiles.setTileAt(value, myTiles.transparency16)
     }
-    for (let value of tiles.getTilesByType(myTiles.tile36)) {
+    for (let value of tiles.getTilesByType(myTiles.transparency16)) {
         Enemy_killer = sprites.create(assets.image`Hitbox`, SpriteKind.DeathEnemy)
         tiles.placeOnTile(Enemy_killer, value)
     }
@@ -2060,10 +2042,10 @@ game.onUpdate(function () {
                 music.stopAllSounds()
                 music.play(music.createSong(assets.song`Death`), music.PlaybackMode.InBackground)
             }
-            if (Main_Player.tileKindAt(TileDirection.Center, myTiles.tile38) || (Main_Player.tileKindAt(TileDirection.Center, myTiles.tile39) || (Main_Player.tileKindAt(TileDirection.Center, myTiles.tile40) || (Main_Player.tileKindAt(TileDirection.Center, myTiles.tile37) || Main_Player.tileKindAt(TileDirection.Center, myTiles.tile36))))) {
+            if (Main_Player.tileKindAt(TileDirection.Center, myTiles.tile37) || (Main_Player.tileKindAt(TileDirection.Center, myTiles.tile38) || (Main_Player.tileKindAt(TileDirection.Center, myTiles.tile39) || (Main_Player.tileKindAt(TileDirection.Center, myTiles.tile40) || Main_Player.tileKindAt(TileDirection.Center, myTiles.tile36))))) {
             	
             }
-            if (!(Main_Player.tileKindAt(TileDirection.Center, myTiles.tile38) || (Main_Player.tileKindAt(TileDirection.Center, myTiles.tile39) || (Main_Player.tileKindAt(TileDirection.Center, myTiles.tile40) || (Main_Player.tileKindAt(TileDirection.Center, myTiles.tile37) || Main_Player.tileKindAt(TileDirection.Center, myTiles.tile36)))))) {
+            if (!(Main_Player.tileKindAt(TileDirection.Center, myTiles.tile37) || (Main_Player.tileKindAt(TileDirection.Center, myTiles.tile38) || (Main_Player.tileKindAt(TileDirection.Center, myTiles.tile39) || (Main_Player.tileKindAt(TileDirection.Center, myTiles.tile40) || Main_Player.tileKindAt(TileDirection.Center, myTiles.tile36)))))) {
                 CAM.setPosition(Main_Player.x, Main_Player.y)
             }
             MHANIM.setPosition(Main_Player.x, Main_Player.y)
