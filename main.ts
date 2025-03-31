@@ -819,10 +819,6 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
                     color.clearFadeEffect()
                     Start()
                 })
-            } else if (controller.left.isPressed()) {
-            	
-            } else if (controller.down.isPressed()) {
-            	
             }
         }
     }
